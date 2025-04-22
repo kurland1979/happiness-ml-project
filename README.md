@@ -20,5 +20,17 @@ It combines unsupervised learning (GMM clustering) with regression analysis to p
 2. Install requirements: `pip install -r requirements.txt`  
 3. Run `main.py`
 
+## Project Structure
+- `get_data.py` – Loads and cleans the WHR dataset, and renames columns for consistency.
+- `group_analysis.py` – Performs clustering (GMM), calculates group-level means, standard deviations,
+   and generates visualizations.
+- `regression_model.py` – Trains a linear regression model to predict the happiness score (`ladder_score`) and 
+   evaluates it using MAE and R².
+- `main.py` – Main script that orchestrates all steps: loading data, clustering, analysis, prediction, and output
+   generation.
+- `README.md` – This file 😊
+- `requirements.txt` – Lists the Python libraries required to run the project.
+
+
 ## Author
 Marina Kurland 💛
